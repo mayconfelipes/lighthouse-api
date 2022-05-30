@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "51a22b11-46f6-48ad-a15c-7d1b9ed6fce9",
+		"name": "Lighthouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16657694"
+	},
+	"item": [
+		{
+			"name": "Criação de Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"name\": \"Chewbacca\",\r\n    \"phone\": \"11 99999-9999\",\r\n    \"email\": \"chewbacca@gmail.com\",\r\n    \"password\": \"AbcD1234\",\r\n    \"passwordConfirmation\": \"AbcD1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"email\": \"yoda@jedi.com\",\r\n    \"password\": \"AbcD1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/login?page=2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edição de Usuário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY1MzgzMTI0MzY3MSwiaWF0IjoxNjUzODgxMzIyLCJleHAiOjE2NTM4OTMzMjJ9.9RNDjDBkbitamRJnb9e0aEMb_l3x4ruFKjrZ1KSv0hs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"name\": \"Princesa Leia Organa\",\r\n    \"phone\": \"11 99999-9999\",\r\n    \"email\": \"leia-organa@gmail.com\",\r\n    \"password\": \"AbcD1234\",\r\n    \"passwordConfirmation\": \"AbcD1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/usuarios/1653831243667",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios",
+						"1653831243667"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listagem de usuários",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY1MzgzMTI0MzY3MSwiaWF0IjoxNjUzODU4MTkzLCJleHAiOjE2NTM4NTg1NTh9.Fxa1Ii-pScra5tWFLqw3_PJdTc1pnQp2eEtRV2dhLMI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listagem de usuários Page 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY1MzgzMTI0MzY3MSwiaWF0IjoxNjUzODgwMzY3LCJleHAiOjE2NTM4OTIzNjd9.ZRAQ17ulIaTl3mIR_aULT64TGYU1ZWoiNhPvbgP_5iE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/usuarios?page=3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
