@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1653831243671,
+		"name": "Yoda",
+		"email": "yoda@jedi.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+	{
+		"id": 1653831243670,
+		"name": "Luke Skywalker",
+		"email": "luke@jedi.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+	{
+		"id": 1653831243669,
+		"name": "Darth Vader",
+		"email": "vader@deathstar.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+	{
+		"id": 1653831243668,
+		"name": "Obi-Wan Kenobi",
+		"email": "kenobi@jedi.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+	{
+		"id": 1653831243667,
+		"name": "Leia Organa",
+		"email": "organa@gmail.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+	{
+		"id": 1653831243666,
+		"name": "R2-D2",
+		"email": "r2d2@gmail.com",
+		"phone": "123-456-7890",
+		"password": "fe1f93363d02cd413abc9f86decffd40"
+	},
+    {
+        "id": 1653831243665,
+        "name": "C-3PO",
+        "email": "c3po@gmail.com",
+        "phone": "123-456-7890",
+        "password": "fe1f93363d02cd413abc9f86decffd40"
+    }
+]
